@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+    <head>
+      {% if title %}
+      <title>{{ title }} - Bank Account</title>
+      {% else %}
+      <title>Welcome to Black Cat Bank</title>
+      {% endif %}
+    </head>
+    <body>
+        <div>Black Cat Bank - 
+            <a href="/index">Home</a> 
+            <a href="/login">Log in</a>
+        </div>
+        <hr>
+        {% block content %}{% endblock %}
+    </body>
+</html>
